@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="LoveApartmentRefactor:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/LoveApartmentRefactor_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="LoveApartmentRefactor/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LoveApartmentRefactor" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons_loging" />
+          <element id="library" level="project" name="commons_fileupload" />
+          <element id="library" level="project" name="commons_io" />
+          <element id="library" level="project" name="druid" />
+          <element id="library" level="project" name="jackson" />
+          <element id="library" level="project" name="hibernate_core" />
+          <element id="library" level="project" name="oracle" />
+          <element id="library" level="project" name="JSTL" />
+          <element id="library" level="project" name="validate" />
+          <element id="library" level="project" name="AOP" />
+          <element id="library" level="project" name="spring-jdbc" />
+          <element id="library" level="project" name="spring-orm" />
+          <element id="library" level="project" name="spring_core" />
+          <element id="library" level="project" name="Spring_MVC" />
+          <element id="library" level="project" name="Spring_Web" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

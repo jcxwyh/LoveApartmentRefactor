@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="commons_loging">
+    <CLASSES>
+      <root url="file://D:/projects/apache/commons_loging" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://D:/projects/apache/commons_loging" recursive="false" />
+  </library>
+</component>

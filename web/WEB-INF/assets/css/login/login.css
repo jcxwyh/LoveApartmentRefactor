@@ -1,0 +1,11 @@
+.body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background: url("../../img/index.gif") fixed center center no-repeat;
+    background-size: cover;
+    width:100%;
+}
+.to-center{
+    margin-top:25%
+}

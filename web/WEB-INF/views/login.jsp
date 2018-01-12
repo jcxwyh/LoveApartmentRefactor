@@ -15,7 +15,7 @@
         <script src="assets/js/jquery-3.2.1.js"></script>
     </head>
     <body class="body">
-        <div class="layui-container ">
+        <div class="layui-container layui-anim layui-anim-upbit">
             <form class="lay-form" action="login" method="post">
                 <div class="layui-row ">
                     <div class="layui-col-md2 layui-col-md-offset9 to-center">
@@ -42,7 +42,7 @@
                 <div class="layui-row">
                     <div class="layui-col-md2 layui-col-md-offset9">
                         <div class="layui-form-item">
-                            <button class="layui-btn login-btn layui-btn-fluid">登录</button>
+                            <button class="layui-btn login-btn layui-btn-fluid ">登录</button>
                         </div>
                     </div>
                 </div>

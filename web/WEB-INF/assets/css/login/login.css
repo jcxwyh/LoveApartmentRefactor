@@ -7,5 +7,31 @@
     width:100%;
 }
 .to-center{
-    margin-top:25%
+    margin-top:20%
+}
+@media (min-width: 768px){
+    .validate-code{
+        margin-left:-0.8em;
+    }
+}
+.validate-code{
+    background:url('../../img/valiBG.jpg') fixed center center no-repeat;
+    background-size: 100%,102%;
+    text-align: right;
+    font-size: 20px;
+    cursor:pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+}
+.vali-error{
+    color:rgba(255,48,48,0.8);
+    font-weight: bolder;
+}
+.vali-success{
+    color:rgba(50,205,50,0.8);
+    font-weight: bolder;
 }

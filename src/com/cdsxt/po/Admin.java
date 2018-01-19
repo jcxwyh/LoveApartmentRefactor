@@ -8,7 +8,7 @@ import javax.persistence.*;
  * @description TODO
  */
 @Entity
-@Table(name="lave_admin")
+@Table(name="love_admin")
 public class Admin {
     @Id
     @SequenceGenerator(name="adminSeq",sequenceName = "seq_love_admin")

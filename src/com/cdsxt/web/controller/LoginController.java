@@ -26,6 +26,11 @@ public class LoginController {
     public String valiLogin(Admin admin){
         System.out.println(admin);
         boolean b = loginService.valiUser(admin);
-        return "welcome";
+        if(b){
+            return "welcome";
+        }else{
+            return "login";
+        }
+
     }
 }

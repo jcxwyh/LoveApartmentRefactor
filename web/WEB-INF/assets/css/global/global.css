@@ -2,3 +2,45 @@
     margin:0;
     padding:0;
 }
+/* skin1 */
+html .skin-1 .my-header .my-header-logo,
+html .skin-1 .layui-nav .layui-nav-item a,
+html .skin-1 .layui-nav .layui-nav-item a:hover {
+    color: #444;
+}
+
+html .skin-1 .my-header,
+html .skin-1 .layui-nav,
+html .skin-1 .layui-nav-child {
+    background: white;
+}
+
+html .skin-1 .layui-nav .layui-nav-item .layui-nav-child dd.layui-this a {
+    color: white;
+}
+
+html .skin-1 .layui-nav .layui-nav-item .layui-nav-child dd.layui-this,
+html .skin-1 .layui-nav .layui-nav-item .layui-nav-child dd.layui-this > a,
+html .skin-1 .layui-nav-tree .layui-nav-item > a:hover,
+html .skin-1 .layui-nav .layui-nav-item .layui-nav-child dd:hover > a,
+html .skin-1 .layui-tab-title li .layui-tab-close:hover,
+html .skin-1 .dblclick-tips-box .layui-layer-content {
+    color: white !important;
+    background-color: #666 !important;
+}
+
+html .skin-1 .dblclick-tips-box i.layui-layer-TipsB {
+    border-right-color: #666;
+}
+
+html .skin-1 .layui-nav .layui-nav-itemed > a {
+    background: #444 !important;
+}
+
+html .skin-1 .layui-nav .layui-nav-more {
+    border-color: #444 transparent transparent;
+}
+
+html .skin-1 .layui-nav .layui-nav-mored {
+    border-color: transparent transparent #444;
+}

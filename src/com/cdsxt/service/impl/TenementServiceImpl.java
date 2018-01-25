@@ -23,4 +23,9 @@ public class TenementServiceImpl implements TenementService{
     public List<Tenement> findAll() {
         return this.tenementDao.findAll();
     }
+
+    @Override
+    public void addTene(Tenement tenement) {
+        this.tenementDao.addTene(tenement);
+    }
 }

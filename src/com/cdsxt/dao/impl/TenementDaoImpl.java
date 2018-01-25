@@ -36,6 +36,16 @@ public class TenementDaoImpl implements TenementDao{
     }
 
     /**
+     * 添加住户
+     * @param tenement
+     * @return
+     */
+    @Override
+    public void addTene(Tenement tenement) {
+        this.getSession().save(tenement);
+    }
+
+    /**
      * 插入住户信息
      */
     @Test

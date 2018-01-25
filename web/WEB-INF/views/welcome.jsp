@@ -26,14 +26,18 @@
                 <div style="padding-left: 8px;">
                     <!-- 一个Tab -->
                     <div class="layui-tab" lay-allowClose="true">
-                        <ul class="layui-tab-title">
-                            <li class="layui-this">首页
-                                <i class="layui-icon layui-unselect layui-tab-close" style="display: none;">ဆ</i>
-                            </li>
-                        </ul>
+
                         <div class="layui-tab-content">
-                            <div class="layui-tab-item layui-show">
-                                <!-- 写一个轮播 -->
+                            <div class="layui-carousel box-carousel" id="first">
+                                <div carousel-item>
+                                    <div><img src="assets/img/colla/1.jpg" /></div>
+                                    <div><img src="assets/img/colla/2.jpg" /></div>
+                                    <div><img src="assets/img/colla/3.jpg" /></div>
+                                    <div><img src="assets/img/colla/4.jpg" /></div>
+                                    <div><img src="assets/img/colla/5.jpg" /></div>
+                                    <div><img src="assets/img/colla/7.jpg" /></div>
+                                    <div><img src="assets/img/colla/8.jpg" /></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -41,4 +45,19 @@
             </div>
         </div>
     </body>
+    <script>
+        layui.use(["element","carousel"],function(){
+           var element = layui.element;
+           var carousel = layui.carousel;
+
+            carousel.render({
+                elem:"#first",
+                width:'100%',
+                height:'520',
+                arrow:'hover',
+                anim:'fade',
+                interval:2000,
+            });
+        });
+    </script>
 </html>

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/global/global.css">
     <link rel="stylesheet" href="assets/css/welcome/welcome.css">
     <link rel="stylesheet" type="text/css" href="assets/css/hp-layui.css" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_545575_ptiiuir0h33di.css">
     <script src="assets/js/jquery-3.2.1.js"></script>
     <script src="assets/js/layui.js"></script>
 </head>
@@ -60,6 +61,7 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree" lay-filter="left-nav">
                 <li class="layui-nav-item " jcx-parent-id="tenement"><!-- 选中layui-nav-itemed layui-this -->
+                    <!-- 住户管理模块 -->
                     <a class="" href="javascript:;">住户管理</a>
                     <dl class="layui-nav-child">
                         <dd>
@@ -79,27 +81,115 @@
                         </dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">扩展组件</a>
+                <!-- 房产管理 -->
+                <li class="layui-nav-item " jcx-parent-id="estate"><!-- 选中layui-nav-itemed layui-this -->
+                    <a class="" href="javascript:;">房产管理</a>
                     <dl class="layui-nav-child">
                         <dd>
-                            <a class="hp-tab-add" hp-href="assets/hpDemo/hpTab.html" href="javascript:;" >动态选项卡</a>
+                            <a class="jcx-tab" jcx-href="estateManage/query" jcx-id="estate-list" href="javascript:;">房产列表</a>
                         </dd>
                         <dd>
-                            <a class="hp-tab-add" hp-href="assets/hpDemo/hpRightMenu.html" href="javascript:;">右键菜单项</a>
+                            <a class="jcx-tab" jcx-href="estateManage/estateAna" jcx-id="estate-ana" href="javascript:;">房产分析</a>
                         </dd>
                         <dd>
-                            <a class="hp-tab-add" hp-href="assets/hpDemo/hpLayedit.html"  href="javascript:;">多图编辑器</a>
+                            <a class="jcx-tab" jcx-href="estateManage/search" jcx-id="estate-search" href="javascript:;">房产查询</a>
                         </dd>
                         <dd>
-                            <a class="hp-tab-add" hp-href="assets/hpDemo/hpFormAll.html"  href="javascript:;">表单全屏层</a>
+                            <a class="jcx-tab" jcx-href="estateManage/export" jcx-id="estate-export" href="javascript:;">房产导出</a>
                         </dd>
                         <dd>
-                            <a class="hp-tab-add" hp-href="assets/hpDemo/hpWindow.html"  >弹出窗口层</a>
+                            <a class="jcx-tab" jcx-href="estateManage/houseType" jcx-id="estate-houseType" href="javascript:;">户型图管理</a>
                         </dd>
                     </dl>
                 </li>
-
+                <!-- 设备管理 -->
+                <li class="layui-nav-item " jcx-parent-id="device"><!-- 选中layui-nav-itemed layui-this -->
+                    <a class="" href="javascript:;">设备管理</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a class="jcx-tab" jcx-href="deviceManage/query" jcx-id="device-list" href="javascript:;">设备列表</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="deviceManage/deviceAna" jcx-id="device-ana" href="javascript:;">设备分析</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="deviceManage/export" jcx-id="device-export" href="javascript:;">设备导出</a>
+                        </dd>
+                    </dl>
+                </li>
+                <!-- 人事管理 -->
+                <li class="layui-nav-item " jcx-parent-id="employee"><!-- 选中layui-nav-itemed layui-this -->
+                    <a class="" href="javascript:;">人事管理</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a class="jcx-tab" jcx-href="employeeManage/query" jcx-id="employee-list" href="javascript:;">员工列表</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="employeeManage/ana" jcx-id="employee-ana" href="javascript:;">员工分析</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="employeeManage/attendance" jcx-id="employee-attendance" href="javascript:;">考勤管理</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="employeeManage/export" jcx-id="employee-export" href="javascript:;">员工导出</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="employeeManage/contractManage" jcx-id="employee-contract" href="javascript:;">合同管理</a>
+                        </dd>
+                    </dl>
+                </li>
+                <!-- 收费管理 -->
+                <li class="layui-nav-item " jcx-parent-id="toll"><!-- 选中layui-nav-itemed layui-this -->
+                    <a class="" href="javascript:;">收费管理</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a class="jcx-tab" jcx-href="tollManage/query" jcx-id="toll-list" href="javascript:;">收费项目</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="tollManage/info" jcx-id="toll-info" href="javascript:;">缴费信息</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="tollManage/na" jcx-id="toll-ana" href="javascript:;">缴费分析</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="tollManage/export" jcx-id="toll-export" href="javascript:;">账单导出</a>
+                        </dd>
+                    </dl>
+                </li>
+                <!-- 车辆管理 -->
+                <li class="layui-nav-item " jcx-parent-id="vehicle"><!-- 选中layui-nav-itemed layui-this -->
+                    <a class="" href="javascript:;">车辆管理</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a class="jcx-tab" jcx-href="vehicleManage/query" jcx-id="vehicle-list" href="javascript:;">车辆列表</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="vehicleManage/ana" jcx-id="vehicle-ana" href="javascript:;">车辆分析</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="vehicleManage/export" jcx-id="vehicle-export" href="javascript:;">车辆导出</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="tenementManage/parkManage" jcx-id="vehicle-park" href="javascript:;">车位管理</a>
+                        </dd>
+                    </dl>
+                </li>
+                <!-- 系统管理 -->
+                <li class="layui-nav-item " jcx-parent-id="admin"><!-- 选中layui-nav-itemed layui-this -->
+                    <a class="" href="javascript:;">系统管理</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a class="jcx-tab" jcx-href="adminManage/query" jcx-id="admin-list" href="javascript:;">管理员列表</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="adminManage/authority" jcx-id="admin-authority" href="javascript:;">权限管理</a>
+                        </dd>
+                        <dd>
+                            <a class="jcx-tab" jcx-href="adminManage/database" jcx-id="admin-database" href="javascript:;">数据库管理</a>
+                        </dd>
+                    </dl>
+                </li>
+                <!-- 示例页面 -->
                 <li class="layui-nav-item">
                     <a href="javascript:;">示例页面</a>
                     <dl class="layui-nav-child">
@@ -111,41 +201,7 @@
                         </dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">数据列表</a>
-                    <dl class="layui-nav-child">
-                        <dd>
-                            <a class="hp-tab-add" hp-href="assets/pageDemo/list/dataList.html" href="javascript:;" >基础列表</a>
-                        </dd>
-                        <dd>
-                            <a class="hp-tab-add" hp-href="assets/pageDemo/list/imgList.html" href="javascript:;" >图文列表</a>
-                        </dd>
-                        <dd>
-                            <a class="hp-tab-add" hp-href="assets/pageDemo/list/formList.html" href="javascript:;" >表单列表</a>
-                        </dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item">
-                    <a href="javascript:;">数据分析</a>
-                    <dl class="layui-nav-child">
-                        <dd>
-                            <a class="hp-tab-add" hp-href="assets/pageDemo/echarts/bar.html" href="javascript:;" >柱状图</a>
-                        </dd>
-                        <dd>
-                            <a class="hp-tab-add" hp-href="assets/pageDemo/echarts/pie.html" href="javascript:;" >饼图</a>
-                        </dd>
 
-                    </dl>
-                </li>
-
-
-
-                <li class="layui-nav-item">
-                    <a  target="_blank"   href="https://github.com/hpit-BAT">github组织</a>
-                </li>
-                <li class="layui-nav-item">
-                    <a  target="_blank"   href="https://hpit-bat.github.io/hpit-BAT-home">黑科技</a>
-                </li>
             </ul>
         </div>
     </div>
@@ -154,7 +210,7 @@
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © hp-layui-version-1.0
+        © jcx-power by <span class="icon iconfont layui-jcx--link" jcx-url="http://www.layui.com">LayUI</span> & <span class="icon iconfont layui-jcx--link" jcx-url="http://www.iconfont.cn">阿里巴巴矢量图标库</span>
     </div>
 </div>
 <script>
@@ -177,6 +233,14 @@
         var element = layui.element;
         var carousel = layui.carousel; //轮播
         var jcxTab = layui.jcxTab;
+        var $ = layui.$;
+
+        $(".layui-jcx--link").click(function(){
+            open($(this).attr("jcx-url"));
+        });
+        $(".layui-jcx--link").mouseover(function(){
+            $(this).css({color:'forestgreen',cursor:'pointer'});
+        });
 
 
 //        var hpTab = layui.hpTab;

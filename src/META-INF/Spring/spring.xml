@@ -11,6 +11,16 @@
         <context:exclude-filter type="regex" expression="com.cdsxt.web.controller"/>
     </context:component-scan>
 
+    <!-- 配置国际化 -->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames">
+            <array>
+                <value>META-INF.i18n.language</value>
+                <value>META-INF.i18n.validate</value>
+            </array>
+        </property>
+    </bean>
+
     <!-- 配置数据库连接池 druid -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!-- 基本属性 url、user、password -->
@@ -57,4 +67,10 @@
         </property>
         <property name="packagesToScan" value="com.cdsxt.po,com.cdsxt.vo"></property>
     </bean>
+    <!-- 事务配置 -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+
 </beans>

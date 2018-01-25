@@ -20,7 +20,7 @@ public class Tenement {
     @Column
     private String tname;
     @Column
-    private Byte Gender;
+    private Byte gender;
     @Column
     private Integer age;
     @Column
@@ -66,11 +66,11 @@ public class Tenement {
     }
 
     public Byte getGender() {
-        return Gender;
+        return gender;
     }
 
     public void setGender(Byte gender) {
-        Gender = gender;
+        this.gender = gender;
     }
 
     public Integer getAge() {
